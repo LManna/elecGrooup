@@ -11,15 +11,15 @@ var routes = [
 	},
 	{
 	    path: '/tag',
-	    component: () => import('../view/study_dosm/tag'),
+	    component: () => import('../views/study_dosm/tag'),
 	},
 	{
 	    path: '/content',
-	    component: () => import('../view/study_dosm/content'),
+	    component: () => import('../views/study_dosm/content'),
 	},
 	{
 	    path: '/data',
-	    component: () => import('../view/study_dosm/data'),
+	    component: () => import('../views/study_dosm/data'),
 	},
 ]
 

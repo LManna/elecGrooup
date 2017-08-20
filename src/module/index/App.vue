@@ -1,19 +1,20 @@
 <template>
   <div id="app">
+    <p>这是多一年测试</p>
     <router-view></router-view>
     <div>
-      <tag />
+      <!-- <tag /> -->
     </div>
   </div>
 </template>
 
 <script>
-import tag from './view/study_dosm/tag'
+// import tag from './view/study_dosm/tag'
 export default {
   name: 'app',
-  components: {
-    tag
-  }
+  // components: {
+  //   tag
+  // }
 }
 </script>
 

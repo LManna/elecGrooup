@@ -25,11 +25,25 @@ module.exports = merge(baseWebpackConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'index.html',
-      inject: true
-    }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'index.html',
+    //   template: 'index.html',
+    //   inject: true
+    // }),
     new FriendlyErrorsPlugin()
   ]
 })
+
+var pages = utils.getPageConfig()
+//构建生成多页面的HtmlWebpackPlugin配置，主要是循环生成
+for (var page of pages) {
+  var conf = {
+    filename: page.name + '.html',
+    template: page.path + '/index.html', // 模板路径
+    chunks: ['vendor',page.name], // 每个html引用的js模块
+    inject: true,              // js插入位置
+    hash:true
+  };
+
+  module.exports.plugins.push(new HtmlWebpackPlugin(conf));
+}

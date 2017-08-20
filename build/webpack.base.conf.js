@@ -8,11 +8,26 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+var entries = utils.getPageMultiEntry('/index.js')
+
+
+// var entries =  utils.getMultiEntry('./src/view/**/*.js'); // 获得入口js文件
+// var chunks = Object.keys(entries);
+
+console.log('entries',entries)
+entries.vendor = [
+  'vue',
+  'vue-router',
+]
+
+// console.log('0000000000000',chunks)
+
 module.exports = {
-  entry: {
-    app: './src/main.js', 
-    vendors:['vue','vue-router'],   // 需要被提取为公共模块的群组
-  },
+  // entry: {
+  //   app: './src/main.js', 
+  //   vendors:['vue','vue-router'],   // 需要被提取为公共模块的群组
+  // },
+  entry: entries,
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

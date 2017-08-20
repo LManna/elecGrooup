@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var SpritesmithPlugin = require('webpack-spritesmith');
+var pageConfig = require('../config/pageConfig.js')
 var glob = require('glob');
 
 exports.assetsPath = function (_path) {
@@ -110,4 +111,15 @@ exports.styleLoaders = function (options) {
     })
   }
   return output
+}
+
+exports.getPageConfig = function(){
+  return pageConfig
+}
+exports.getPageMultiEntry = function(fileName){
+  var entries = {}
+  pageConfig.forEach(i=>{
+    entries[i.name] = i.path + fileName
+  })
+  return entries
 }
