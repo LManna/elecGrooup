@@ -7,19 +7,23 @@ Vue.use(Router)
 var routes = [
 	{
 	    path: '/',
-	    component: () => import('@/components/Hello'),
+	    component: () => import('@/common/Hello'),
+	    meta:{headerTitle: "首页"}
 	},
 	{
 	    path: '/tag',
-	    component: () => import('../views/study_dosm/tag'),
+	    component: () => import('../views/demo/tag'),
+	    meta:{headerTitle: "标签页"}
 	},
 	{
 	    path: '/content',
-	    component: () => import('../views/study_dosm/content'),
+	    component: () => import('../views/demo/content'),
+	    meta: {headerTitle: "内容页"}
 	},
 	{
 	    path: '/data',
-	    component: () => import('../views/study_dosm/data'),
+	    component: () => import('../views/demo/data'),
+	    meta: {headerTitle: "数据页"}
 	},
 ]
 

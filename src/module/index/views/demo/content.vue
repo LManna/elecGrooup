@@ -17,15 +17,25 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <button @click="test">click</button>
   </div>
 </template>
 
 <script>
+import api from '@/api'
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    test(){
+      alert(45)
+      api.getTest(function(isSuccess,data,err){
+        console.log(isSuccess,data,err)
+      })
     }
   }
 }

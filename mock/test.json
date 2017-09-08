@@ -1,3 +1,8 @@
 {
-	"name":"这是测试数据1111111111111111"
+  "isSuccess":true,
+  "data":{
+    "test":"testValue"
+  },
+  "errorNo":0,
+  "errorMsg":null
 }

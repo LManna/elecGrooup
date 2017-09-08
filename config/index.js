@@ -9,8 +9,19 @@ var proxyTable = {
     '/api': {
         target: 'http://baike.baidu.com/', // target host 
         changeOrigin: true,
+    },
+    '/local/mock': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
         pathRewrite: {
-            // '^/api' : '',
+            '^/local/mock': '/mock'
+        }
+    },
+    '/postData': {
+        target: 'https://tm.kbao123.com/',
+        changeOrigin: true,
+        pathRewrite: {
+            '^/postData': ''
         }
     }
 }
