@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <p>这是多一年测试</p>
     <router-view></router-view>
+    <div>
+      <!-- <tag /> -->
+    </div>
   </div>
 </template>
 
 <script>
+// import tag from './view/study_dosm/tag'
 export default {
-  name: 'app'
+  name: 'app',
+  // components: {
+  //   tag
+  // }
 }
 </script>
 
