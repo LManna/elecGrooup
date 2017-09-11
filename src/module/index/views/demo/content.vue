@@ -32,7 +32,6 @@ export default {
   },
   methods:{
     test(){
-      alert(45)
       api.getTest(function(isSuccess,data,err){
         console.log(isSuccess,data,err)
       })

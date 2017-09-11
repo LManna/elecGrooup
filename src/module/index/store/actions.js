@@ -8,7 +8,7 @@
 var actions = {
 	init({state,commit,getters}){
 		console.log("action init!!!!")
-		commit('actionsData','action传的数据')
+		// commit('actionsData','action传的数据')
 	}
 }
 
