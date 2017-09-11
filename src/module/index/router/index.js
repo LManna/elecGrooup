@@ -25,6 +25,12 @@ var routes = [
 	    component: () => import('../views/demo/data'),
 	    meta: {headerTitle: "数据页"}
 	},
+	// 以下是详情页路由，上面是测试路由
+	{
+	    path: '/h5/detail/unit',
+	    component: () => import('../views/details/index'),
+	    meta: {headerTitle: "详情页"}
+	},
 ]
 
 const router = new Router({

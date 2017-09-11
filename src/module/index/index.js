@@ -5,10 +5,10 @@ import App from './App'
 import router from './router'
 import store from './store'
 import {sync} from 'vuex-router-sync'
-import Element from 'element-ui'
+// import Element from 'element-ui'
 // import Axios from 'axios'
 
-Vue.use(Element)
+// Vue.use(Element)
 // vue.use(Axios)
 
 Vue.config.productionTip = false
