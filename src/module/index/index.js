@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import {sync} from 'vuex-router-sync'
+import {Loading,Tips,AlertBox} from '@/common/popUp';
 // import Element from 'element-ui'
 // import Axios from 'axios'
 
@@ -12,6 +13,9 @@ import {sync} from 'vuex-router-sync'
 // vue.use(Axios)
 
 Vue.config.productionTip = false
+Vue.use(Loading)
+Vue.use(Tips)
+Vue.use(AlertBox)
 
 sync(store, router);
 

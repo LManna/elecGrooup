@@ -1,0 +1,57 @@
+{
+  "isSuccess":true,
+  "data":{
+    "detail":[
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1181806&size=64",
+    		"name":"Jane",
+    		"comment":"交通便利，去太古里和春熙路都只需要步行，周边有小超市水果店小面店，晚上九点以后还有通宵的烧烤吃。屋内设施齐全床品质量也不错。投影是这套房屋的特色，爱电影的你应该可以很过瘾。",
+    		"time": "02-25 18:12"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1181628&size=64",
+    		"name":"Jane",
+    		"comment":"位置不错，服务非常好，技术也不错",
+    		"time": "07-25 13:34"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1181624&size=64",
+    		"name":"Jane",
+    		"comment":"环境很棒  位置也好 视野开阔",
+    		"time": "07-25 23:34"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1165456&size=64",
+    		"name":"Jane",
+    		"comment":"交通便利，去太古里和春熙路都只需要步行，周边有小超市水果店小面店，晚上九点以后还有通宵的烧烤吃。",
+    		"time": "12-25 11:11"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1206971&size=64",
+    		"name":"Jane",
+    		"comment":"位置不错，服务非常好，技术也不错",
+    		"time": "07-25 13:34"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1206952&size=64",
+    		"name":"Jane",
+    		"comment":"位置不错，服务非常好，技术也不错",
+    		"time": "07-25 13:34"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1206962&size=64",
+    		"name":"Jane",
+    		"comment":"位置不错，服务非常好，技术也不错",
+    		"time": "07-25 13:34"
+    	},
+    	{
+    		"logo":"https://www.easyicon.net/api/resizeApi.php?id=1206967&size=64",
+    		"name":"Jane",
+    		"comment":"位置不错，服务非常好，技术也不错",
+    		"time": "07-25 13:34"
+    	}
+    ]
+  },
+  "errorNo":0,
+  "errorMsg":null
+}

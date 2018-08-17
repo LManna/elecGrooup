@@ -25,11 +25,31 @@ var routes = [
 	    component: () => import('../views/demo/data'),
 	    meta: {headerTitle: "数据页"}
 	},
-	// 以下是详情页路由，上面是测试路由
+	// 私人充电桩
 	{
-	    path: '/h5/detail/unit',
-	    component: () => import('../views/details/index'),
-	    meta: {headerTitle: "详情页"}
+	    path: '/priCharge/login',
+	    component: () => import('../views/login'),
+	    meta: {headerTitle: "登陆/注册"}
+	},
+	{
+	    path: '/priCharge/list',
+	    component: () => import('../views/list'),
+	    meta: {headerTitle: "充电桩列表页"}
+	},
+	{
+	    path: '/priCharge/my',
+	    component: () => import('../views/my'),
+	    meta: {headerTitle: "个人中心"}
+	},
+	{
+	    path: '/priCharge/detail',
+	    component: () => import('../views/detail'),
+	    meta: {headerTitle: "充电桩详情"}
+	},
+	{
+	    path: '/priCharge/ownList',
+	    component: () => import('../views/ownList'),
+	    meta: {headerTitle: "我的订单"}
 	},
 ]
 
