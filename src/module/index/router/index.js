@@ -7,8 +7,8 @@ Vue.use(Router)
 var routes = [
 	{
 	    path: '/',
-	    component: () => import('@/common/Hello'),
-	    meta:{headerTitle: "首页"}
+	    component: () => import('../views/login'),
+	    meta:{headerTitle: "登陆/注册"}
 	},
 	{
 	    path: '/tag',
